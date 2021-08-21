@@ -1,0 +1,24 @@
+/* .myForm {
+	display: block;
+} */
+/* .textForm{
+	display: inline-block;
+} */
+.resumePost {
+	border: 2px solid #32a1ce;
+	/* text-align: center; */
+}
+legend {
+    background-color: #15e9e5;
+    color: #000;
+    padding: 3px 6px;
+}
+
+footer {
+        text-align: center;
+        font-family: sans-serif;
+        width: 100%;
+        bottom: 0;
+        position:fixed;
+	color: #fff;
+    }

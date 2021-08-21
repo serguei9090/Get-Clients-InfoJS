@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Forms and Button</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Hello World!">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="Style/style.css" />
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">GET Client Info</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-control="navbarContent" aria-expand="false" aria-label='Toggle Navigation'>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--Collapse Nav bar -->
+		<div class="collapse navbar-collapse" id="navbarContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item-active">
+					<a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+
+				</li>
+				<li class="nav-item">
+					<a class="nav-link pointer" data-toggle="modal" data-target="#infoModal">Info</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link pointer" data-toggle="modal" data-target="#contactModal">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Modal Info -->
+		<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="infoModalTitle">Welcome ToDoList</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+                        This Project was required by a Friend Company.
+						Get Clients Info from JS Array using, Jquery, JS, bootstrap.
+                        Previosly Parse csv file to js file with the lists
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Contact -->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="contactModalTitle">Welcome Get-Client-Info</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p><strong>Email:</strong>
+							<span>serguei246@gmail.com</span> <br>
+						</p>
+						<p><strong>Phone:</strong> +53 52472074</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<article class="myFormTitle">
+		<h1 class="Title text-center">Form to get the Info</h1>
+	</article>
+	<fieldset>
+	<legend><p class="text-center">Fill The form and Submit</p></legend>
+	<form class="col-xl-12 myform">
+		<div class="form-group justify-content-center row">
+			<label for="itemCode" class="col-sm-1  text-md-center col-form-label mar">Item Code</label>
+			<div class="col-sm-2">
+				<input type="text" class="form-control" id="itemCode" name="itemCode" placeholder="Put Your Item Code" required>
+			</div>
+			<div class="col-sm-1 text-center but">
+				<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+			</div>
+			<div class="col-sm-1 text-center but">
+				<button type="submit" id="clear" class="btn btn-primary">Clear</button>
+			</div>
+		</div>
+		<!-- <div class="form-group row">
+			<label for="inputLastName" class="col-sm-2 col-form-label">Last Name</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="inputLastName" placeholder="Put Your Last Name" required>
+			</div>
+		</div>
+				<div class="form-group row">
+			<label for="span" class="col-sm-2 col-form-label">Email</label>
+			<div class="col-sm-10">
+				<input type="span" class="form-control" id="inputEmail" name="span" placeholder="Put Your Email, example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+			</div>
+		</div>
+						<div class="form-group row">
+			<label for="inputAddres" class="col-sm-2 col-form-label">Address</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="inputAddres" placeholder="Put Your Addres" required>
+			</div>
+		</div> -->
+		<!-- <div class="form-group row">
+			<div class="col-sm-2 text-center but">
+				<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div> -->
+	</form>
+	</fieldset>
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-12 text-center resumePost" id="resumePost">
+		<p id="s_text"><u>Put Your Code to get Info about your product shipping</u></p>
+	</div>
+	</div>
+	</div>
+	<footer class="footer bg-dark text-center">
+    <a class="nav-link">Get Client Info</a>
+    <a class="nav-link">Created by Serguei Castillo 2021</a>
+</footer>
+
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+<script src="js/info.js"></script>
+<script src="js/jquery.sortable.js"></script>
+
+</html>
